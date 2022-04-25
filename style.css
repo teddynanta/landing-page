@@ -1,3 +1,47 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #256A54;
+}
+
+img {
+    padding-left: 15px;
+    display: inline-block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin: 10px;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
