@@ -12,22 +12,59 @@
 <body>
     <header id="header">
         <div class="soc-med">
-            <a href="https://www.instagram.com/teddynantaa" target="_blank"><img
-                    src="https://cdn-icons.flaticon.com/png/512/2175/premium/2175198.png?token=exp=1650955736~hmac=61382249564aedcb58d556b89eeb966e"></a>
-            <a href="https://www.github.com/teddynanta" target="_blank"><img
-                    src="https://cdn-icons-png.flaticon.com/512/733/733609.png"></a>
+            <a href="https://www.instagram.com/teddynantaa" target="_blank"><img src="img/instagram.png"></a>
+            <a href="https://www.github.com/teddynanta" target="_blank"><img src="img/github.png"></a>
         </div>
         <img src="img/logo.svg" alt="Company Logo" id="header-img">
         <nav id="nav-bar">
             <ul>
-                <li class="nav-link"><a href="#home"> Home</a></li>
-                <li class="nav-link"><a href="#video">Videos</a></li>
-                <li class="nav-link"><a href="#contact">Contact Us</a></li>
+                <li><a class="nav-link" href="#home"> Home</a></li>
+                <li><a class="nav-link" href="#videos">Videos</a></li>
+                <li><a class="nav-link" href="#contact">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
     <section id="home">
+        <h1>Start Your <br> Journey Now</h1>
+        <p>conquer your first mountain!</p>
+
+        <h2>Scroll for more!</h2>
+        <a class="arrow bounce" href="#videos"></a>
+        <a href="" class="arrow2"></a>
+    </section>
+    <section id="videos">
+        <h1>A documentation of what we do</h1>
+        <div class="container">
+            <iframe class="responsive" id="video" width="560" height="315"
+                src="https://www.youtube.com/embed/79Q2rrQlPW4" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Join Us Now!</h1>
+        <div class="container">
+            <form id="survey-form">
+                <label for="name" id="name-label">
+                    <fieldset>
+                        <legend>Name</legend>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </fieldset>
+                </label>
+                <label for="email" id="email-label">
+                    Email
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </label>
+                </label>
+                <button type="submit" id="submit">SUBMIT</button>
+            </form>
+        </div>
     </section>
 
+    <footer>
+        this is a footer
+    </footer>
 
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

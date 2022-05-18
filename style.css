@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100&family=Work+Sans:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;800;900&family=Poppins:ital,wght@0,100;0,400;0,700;1,100&family=Work+Sans:ital,wght@0,100;0,300;0,400;1,100&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Work Sans, sans-serif;
+    font-family: Nunito, sans-serif;
     margin: 0;
-    min-height: 3000px;
     background-repeat: no-repeat;
     background-image: url('img/bgfull.png');
     background-size: 100%;
@@ -17,22 +20,21 @@ body {
 
 
 header {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-basis: auto;
     padding: 15px;
     width: 100%;    
     background-color: transparent;
+    z-index: 2;
 }
 
 header .soc-med a img {
     height: 2em;
     padding-left: 15px;
-}
-
-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 ul {
@@ -60,4 +62,167 @@ li a{
 li a:hover {
     border-bottom: 2px solid #000;
     font-weight: 700;
+}
+
+section{
+    padding-top: 5em;
+}
+
+#home h1 {
+    text-align: justify;
+    font-size: 3.5em;
+    font-family: Nunito, sans-serif;
+    margin-left: 1.1em;
+    margin-top: .2em;
+    font-weight: 800;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#home p {
+    font-family: inherit;
+    margin-top: 0;
+    margin-left: 5.2em;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#home h2 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 10em;
+    margin-right: 3.6em;
+    font-size: 1.2em;
+    font-family: Nunito, sans-serif;
+}
+
+.arrow {
+    position: absolute;
+    top: 50;
+    left: 47.5%;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    border: 2px solid black;
+    border-radius: 100%;
+    box-sizing: border-box;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.arrow::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
+#videos {
+    margin-top: 5em;
+}
+
+#videos h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2.2em;
+    font-family: Nunito, sans-serif;
+    font-weight: 800;
+}
+
+#videos .container {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    width: 75%;
+    padding-top: 37.5%; 
+}
+
+#videos .responsive {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+} 
+
+#contact h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2.2em;
+    font-family: Nunito, sans-serif;
+    font-weight: 800;
+}
+
+#contact .container {
+    margin: 1.2em auto;
+    padding: .7em 2em;
+    width: 50%;
+    /* box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.25);
+    border-radius: 8px; */
+}
+
+#contact label {
+    display: block;
+    font-family: Nunito, sans-serif;
+    margin-bottom: 2em;
+    font-weight: 800;
+}
+
+#contact input {
+    padding: .5em .5em;
+    display: block;
+    font-family: Nunito, sans-serif;
+    width: 100%;
+    height: 5px;
+    border-radius: 6px;
+    border : none;  
+    background-color: #5a3a7b;
+}
+
+#contact fieldset {
+    margin: 0;
+    padding: 1px 5px;
+    border: 2px solid #813ed1;
+}
+
+
+
+#contact button {
+    display: block;
+    font-family: inherit;
+    font-weight: 800;
+    width: 30%;
+    height: 2.5em;
+    border-radius: 6px;
+    border: none;
+    background-color: #915ec7;
+    margin: 0 auto;
+    cursor: pointer;
 }
