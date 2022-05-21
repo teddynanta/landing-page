@@ -11,10 +11,6 @@
 
 <body>
     <header id="header">
-        <div class="soc-med">
-            <a href="https://www.instagram.com/teddynantaa" target="_blank"><img src="img/instagram.png"></a>
-            <a href="https://www.github.com/teddynanta" target="_blank"><img src="img/github.png"></a>
-        </div>
         <img src="img/logo.svg" alt="Company Logo" id="header-img">
         <nav id="nav-bar">
             <ul>
@@ -49,12 +45,14 @@
                 <label for="name" id="name-label">
                     <fieldset>
                         <legend>Name</legend>
-                        <input type="text" id="name" placeholder="Enter your name" required>
+                        <input type="text" id="name" placeholder="Enter your name" autocomplete="off" required>
                     </fieldset>
                 </label>
                 <label for="email" id="email-label">
-                    Email
-                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <fieldset>
+                        <legend>Email</legend>
+                        <input type="email" id="email" placeholder="Enter your email" autocomplete="off" required>
+                    </fieldset>
                 </label>
                 </label>
                 <button type="submit" id="submit">SUBMIT</button>
@@ -63,7 +61,11 @@
     </section>
 
     <footer>
-        this is a footer
+        <img src="img/logo.svg" alt="Company Logo" id="footer-img">
+        &copy;Copyright all right reserved; 2022
+        <br>
+        <a href="https://github.com/teddynanta"><b>GitHub</b></a> | <a
+            href="https://instagram.com/teddynantaa"><b>Instagram</b></a>
     </footer>
 
 </body>
