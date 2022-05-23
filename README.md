@@ -1,3 +1,3 @@
 # landing-page
 
-visit live demo https://teddynanta.github.io/survey-form/
+visit live demo https://teddynanta.github.io/landing-page/
